@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>PrepareServlet</servlet-name>
+    <servlet-class>com.web.PrepareServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowListServlet</servlet-name>
+    <servlet-class>com.web.ShowListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewAddElemServlet</servlet-name>
+    <servlet-class>com.web.NewAddElemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ClearServlet</servlet-name>
+    <servlet-class>com.web.ClearServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowCartServlet</servlet-name>
+    <servlet-class>com.web.ShowCartServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>PrepareServlet</servlet-name>
+    <url-pattern>/prepare</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowListServlet</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewAddElemServlet</servlet-name>
+    <url-pattern>/newadd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearServlet</servlet-name>
+    <url-pattern>/clear</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowCartServlet</servlet-name>
+    <url-pattern>/showCart</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
